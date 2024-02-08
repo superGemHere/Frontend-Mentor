@@ -1,3 +1,4 @@
+@import url(https://fonts.google.com/specimen/Outfit);
 
 *{
     margin: 0;
@@ -9,7 +10,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background: #D6E1EE;
+    background: hsl(212, 45%, 89%);
     align-items: center;
     justify-content: center;
   }
@@ -18,34 +19,52 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 325px;
-    height: 475px;
-    background: #FFFFFF;
+    width: 345px;
+    height: fit-content;
+    background: hsl(0, 0%, 100%);
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   img{
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   p{
+    font-family: 'Outfit', sans-serif;
     text-align: center;
     line-height: 1.2em;
-
+    font-size: 15px;
   }
 
   p:nth-child(2){
-    width: 25ch;
+    /* width: 20ch; */
     font-size: 25px;
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 10px;
+    color: hsl(218, 44%, 22%);
   }
 
   p:nth-child(3){
-    color: grey;
+    color: hsl(220, 15%, 55%);
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 85%;
+        height: fit-content;
+        background: hsl(0, 0%, 100%);
+        padding: 15px;
+        border-radius: 20px;
+      }
+    
   }
 
